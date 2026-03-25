@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be'er Sheva | Experiencias de Autor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fdfbf7; color: #332d2a; scroll-behavior: smooth; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544145945-f904253d0c7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-gold { border-top: 4px solid #c5a059; }
+        .bg-beersheva { background-color: #7d4f39; }
+        .text-beersheva { color: #7d4f39; }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(253, 251, 247, 0.9); }
+        
+        /* Estilos para el menú móvil */
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.active {
+            max-height: 400px;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navegación -->
+    <nav class="sticky-nav border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="h-16 flex items-center justify-between">
+                <div class="text-2xl font-serif font-bold text-beersheva">Be'er Sheva</div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                    <a href="#historia" class="hover:text-amber-700 transition">Nuestra Historia</a>
+                    <a href="#experiencias" class="hover:text-amber-700 transition">Experiencias</a>
+                    <a href="#menu" class="hover:text-amber-700 transition">Menú</a>
+                    <a href="#reserva" class="bg-beersheva text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition">Reservar</a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <button id="menu-toggle" class="md:hidden text-beersheva text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="md:hidden flex flex-col space-y-4 text-sm font-semibold uppercase tracking-widest border-t border-stone-100 hidden">
+                <a href="#historia" class="mobile-link pt-4 hover:text-amber-700 transition">Nuestra Historia</a>
+                <a href="#experiencias" class="mobile-link hover:text-amber-700 transition">Experiencias</a>
+                <a href="#menu" class="mobile-link hover:text-amber-700 transition">Menú</a>
+                <a href="#reserva" class="mobile-link bg-beersheva text-white px-4 py-2 rounded-full inline-block text-center w-full hover:bg-opacity-90 transition">Reservar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[70vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl mb-6">Donde el Vínculo se Hace Hogar</h1>
+            <p class="text-xl md:text-2xl italic font-serif">"Un altar de hospitalidad donde el amor se sirve a la mesa"</p>
+        </div>
+    </header>
+
+    <!-- Historia -->
+    <section id="historia" class="py-20 px-4 max-w-4xl mx-auto text-center">
+        <div class="mb-12"><i class="fas fa-house-user text-4xl text-beersheva"></i></div>
+        <h2 class="text-3xl md:text-4xl mb-8">Bienvenidos a Be'er Sheva</h2>
+        <div class="space-y-6 text-lg leading-relaxed text-stone-700">
+            <p>Nuestra historia comenzó hace nueve años en un grupo de conexión de <strong>El Lugar de Su Presencia</strong>, y hoy, celebrando casi siete años de un matrimonio edificado sobre la Roca, entendemos que los vínculos más profundos se nutren en la intimidad y el compartir genuino.</p>
+            <p>De esa convicción nace Be'er Sheva: un refugio diseñado para quienes, como nosotros, valoran espacios que profesan su misma fe y pasión por la Palabra de DIOS.</p>
+            <p class="font-serif italic text-beersheva text-xl">A solo 15 minutos de nuestra iglesia caminando, abrimos las puertas de nuestro hogar.</p>
+            <p>Durante tres horas de exclusividad, el tiempo se detiene al calor de la chimenea. Los invitamos a sumergirse en una narrativa gastronómica de bocados artesanales y elíxires botánicos, mientras nuestras dinámicas de conexión los llevan a reír, conversar y redescubrirse.</p>
+        </div>
+    </section>
+
+    <!-- Planes y Experiencias -->
+    <section id="experiencias" class="py-20 bg-stone-100 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-beersheva font-semibold tracking-widest uppercase text-sm">Nuestras Propuestas</span>
+                <h2 class="text-4xl mt-2 font-serif">🔥 Experiencias al Calor del Fuego</h2>
+                <p class="mt-4 text-stone-500 italic">(Exclusividad y privacidad total para grupos de 4 a 12 personas)</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Plan 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-gold hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-serif">Plan 1: Conexión & Brasas</h3>
+                            <span class="bg-stone-100 px-3 py-1 rounded text-sm font-bold">$60k COP</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">Ideal para profundizar en la amistad en un ambiente tranquilo.</p>
+                        <ul class="space-y-3 mb-8 text-sm">
+                            <li class="flex items-center"><i class="fas fa-fire mr-2 text-orange-500"></i> Chimenea incluida</li>
+                            <li class="flex items-center"><i class="fas fa-utensils mr-2 text-beersheva"></i> Degustación 3 Tiempos</li>
+                            <li class="flex items-center"><i class="fas fa-wine-glass mr-2 text-beersheva"></i> 2 Sodas & Elixires</li>
+                            <li class="mt-4 font-bold text-beersheva">Actividades:</li>
+                            <li>✨ El Hilo del Testimonio</li>
+                            <li>✨ Caja de Visiones y Propósitos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-gold hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-serif">Plan 2: Legado & Sabor</h3>
+                            <span class="bg-stone-100 px-3 py-1 rounded text-sm font-bold">$80k COP</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">Sabores intensos y actividades que desafían el ingenio.</p>
+                        <ul class="space-y-3 mb-8 text-sm">
+                            <li class="flex items-center"><i class="fas fa-fire mr-2 text-orange-500"></i> Chimenea incluida</li>
+                            <li class="flex items-center"><i class="fas fa-utensils mr-2 text-beersheva"></i> Degustación 5 Tiempos</li>
+                            <li class="flex items-center"><i class="fas fa-coffee mr-2 text-beersheva"></i> 1 Soda + 1 Cafetería</li>
+                            <li class="mt-4 font-bold text-beersheva">Actividades de Ingenio:</li>
+                            <li>🧩 El Enigma de la Promesa</li>
+                            <li>🧩 Torneo Rumi Q (Con premio)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-gold hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-serif">Plan 3: Altar de Alegría</h3>
+                            <span class="bg-stone-100 px-3 py-1 rounded text-sm font-bold">$70k COP</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">Para celebraciones luminosas y tardes de gozo.</p>
+                        <ul class="space-y-3 mb-8 text-sm">
+                            <li class="flex items-center"><i class="fas fa-sun mr-2 text-amber-500"></i> Brunch o Tardeo</li>
+                            <li class="flex items-center"><i class="fas fa-utensils mr-2 text-beersheva"></i> Degustación 4 Tiempos</li>
+                            <li class="flex items-center"><i class="fas fa-wine-glass mr-2 text-beersheva"></i> 3 Sodas & Elixires</li>
+                            <li class="mt-4 font-bold text-beersheva">Actividades de Gozo:</li>
+                            <li>🎈 Cosecha de Talentos Ocultos</li>
+                            <li>🎈 Trivia de la Palabra</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Plan 4 -->
+                <div class="bg-beersheva text-white p-8 rounded-2xl shadow-lg border-2 border-amber-400 lg:col-span-1 transform hover:scale-105 transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-serif">👩‍❤️‍👨 Plan 4: Pacto de Amor</h3>
+                        <span class="bg-amber-400 text-beersheva px-3 py-1 rounded text-sm font-bold">$230k Pareja</span>
+                    </div>
+                    <p class="text-stone-200 mb-6 italic">Velada privada y sagrada para matrimonios.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-center"><i class="fas fa-heart mr-2 text-red-400"></i> Privacidad & Decoración Especial</li>
+                        <li class="flex items-center"><i class="fas fa-utensils mr-2 text-amber-400"></i> 4 Tapas Premium (Libre elección)</li>
+                        <li class="flex items-center"><i class="fas fa-glass-cheers mr-2 text-amber-400"></i> 2 Bebidas c/u</li>
+                        <li class="mt-4 font-bold text-amber-400 uppercase tracking-widest text-xs">Reconexión:</li>
+                        <li>✨ El Cofre de las Promesas</li>
+                        <li>✨ Bitácora de Coincidencias</li>
+                        <li>✨ Juego de Tarjetas Especial</li>
+                    </ul>
+                </div>
+
+                <!-- Plan 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm card-gold lg:col-span-2 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:justify-between mb-6">
+                        <h3 class="text-2xl font-serif">👩‍❤️‍👨👩‍❤️‍👨 Plan 5: Fortaleciendo Lazos</h3>
+                        <span class="bg-stone-100 px-3 py-1 rounded text-sm font-bold w-fit mt-2 md:mt-0">$200k por Pareja</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-stone-600 mb-4">Para grupos de parejas (máx. 4 parejas) que desean edificar su amistad.</p>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-beersheva"></i> Degustación Premium 4 Tiempos</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-beersheva"></i> 2 Bebidas a elección c/u</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-bold text-beersheva text-sm mb-2">Actividades de Grupo:</p>
+                            <ul class="space-y-1 text-sm text-stone-700">
+                                <li>✨ La Brújula de Decisiones</li>
+                                <li>✨ El Espejo de las Cualidades</li>
+                                <li>✨ Juego: Fortaleciendo la amistad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opcionales Premium -->
+    <section class="py-12 bg-beersheva text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-serif mb-8">🌟 Personaliza tu Experiencia</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border border-stone-400 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">📸 Set de Recuerdos</h4>
+                    <p class="text-stone-200 text-sm mb-4">Decoración temática (Cumpleaños, Grado, Aniversario) + 3 fotos profesionales digitales.</p>
+                    <span class="font-serif text-2xl">+$70.000 <span class="text-sm">total</span></span>
+                </div>
+                <div class="border border-stone-400 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold mb-2">🍰 El Cierre Dulce</h4>
+                    <p class="text-stone-200 text-sm mb-4">Finaliza con uno de nuestros Postres de Autor. Elección unificada para el grupo.</p>
+                    <span class="font-serif text-2xl">+$10.000 <span class="text-sm">por persona</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif mb-4 italic">Nuestra Carta de Autor</h2>
+                <div class="h-1 w-24 bg-beersheva mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Nivel I -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 border-b pb-2 text-stone-400 uppercase tracking-widest text-center">Nivel I: Raíces & Tradición</h3>
+                    <div class="space-y-6">
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Arepitas de Yuca y Oro de Paipa</p>
+                            <p class="text-sm text-stone-500">Hogao criollo emulsionado y queso Paipa madurado.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Papas Chorreadas en Miniatura</p>
+                            <p class="text-sm text-stone-500">Papitas criollas en salsa y queso campesino.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Patacón en Texturas de la Huerta</p>
+                            <p class="text-sm text-stone-500">Base de plátano verde y perlas de aguacate.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Canapé de Yuca y Atún del Pacífico</p>
+                            <p class="text-sm text-stone-500">Arepa de yuca con lomos de atún.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Bruschetta de Masa Madre</p>
+                            <p class="text-sm text-stone-500">Pan artesanal frotado con ajo y tomate fresco.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Mini Arepa Antioqueña</p>
+                            <p class="text-sm text-stone-500">Con pechuga de pollo desmechada en su jugo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nivel II -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 border-b pb-2 text-beersheva uppercase tracking-widest text-center">Nivel II: Armonías & Contrastes</h3>
+                    <div class="space-y-6">
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Choripán de Gremio</p>
+                            <p class="text-sm text-stone-500">Santarrosano salteado y gratín de queso Paipa.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Alitas en Melado de Trapiche</p>
+                            <p class="text-sm text-stone-500">Reducción artesanal de panela y cítricos.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Dúo de Albóndigas en Hogao</p>
+                            <p class="text-sm text-stone-500">Mezcla res/cerdo con queso campesino.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Champiñones al Olivo</p>
+                            <p class="text-sm text-stone-500">Al wok con ajo, cilantro y queso fresco.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Choricitos al Balsámico</p>
+                            <p class="text-sm text-stone-500">Sobre base de plátano maduro.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Pollito Asado en Nube de Pimienta</p>
+                            <p class="text-sm text-stone-500">Sobre tostones de papa sabanera.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Brocheta de Ave y Uchuvas</p>
+                            <p class="text-sm text-stone-500">Asadas al carbón con cubos de queso.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Patacón Dulce con Mar de Queso</p>
+                            <p class="text-sm text-stone-500">Ensalada de atún sobre maduro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nivel III -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 border-b pb-2 text-amber-600 uppercase tracking-widest text-center">Nivel III: Distinción de Autor</h3>
+                    <div class="space-y-6">
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Chicharrón al Aroma de Café</p>
+                            <p class="text-sm text-stone-500">Glaseado en reducción de café de origen.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Bocados de Lomo al Trapo</p>
+                            <p class="text-sm text-stone-500">Res sellada a la pimienta sobre papa criolla.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Trucha en Ribera de Plátano</p>
+                            <p class="text-sm text-stone-500">Salteada sobre crocante de plátano verde.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Ceviche de Trucha sobre Sabanera</p>
+                            <p class="text-sm text-stone-500">Marinada en cítricos sobre papa asada.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Bruschetta de Autor al Olivo</p>
+                            <p class="text-sm text-stone-500">Con láminas de queso de cabeza artesanal.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Brochetas de Paipa y Uchuva</p>
+                            <p class="text-sm text-stone-500">Cerdo sellado y acidez de uchuva fresca.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Crocante Sabanero con Prosciutto</p>
+                            <p class="text-sm text-stone-500">Papa sabanera, queso fundido y Prosciutto.</p>
+                        </div>
+                        <div class="hover:bg-amber-50 p-3 rounded transition">
+                            <p class="font-bold">Chicharrón con Corazón de Sabana</p>
+                            <p class="text-sm text-stone-500">Tocino en doble cocción con criollas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="mt-20">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Sodas -->
+                    <div class="bg-stone-50 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-serif mb-8 text-center text-beersheva underline underline-offset-8">🥂 Sodas & Elixires</h3>
+                        <div class="grid grid-cols-1 gap-4 text-sm">
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Elixir de Jamaica y Anís:</strong> Flor de Jamaica y burbujas.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Matcha-Limonada de Pepino:</strong> Fusión refrescante premium.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Piña Fuego Rojo:</strong> Piña macerada, jengibre y pimienta roja.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Chai-Soda:</strong> Té negro, cardamomo y canela carbonatada.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Tonic Naranja y Canela:</strong> Cítrico reconfortante.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Shrub de Mora y Vinagre:</strong> Mora silvestre y balsámico.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Limonada Ginger-Spice:</strong> Jengibre y clavo de olor.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Refresco de Fresa y Pimienta:</strong> Sedoso y ligeramente picante.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Agua de Jamaica Artesanal:</strong> Cocida a fuego lento.</div>
+                            <div class="border-l-2 border-beersheva pl-4"><strong>Piña al Anís y Pepino:</strong> Infusión botánica limpia.</div>
+                        </div>
+                    </div>
+
+                    <!-- Cafetería -->
+                    <div class="bg-stone-50 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-serif mb-8 text-center text-beersheva underline underline-offset-8">☕ Cafetería & Cremas</h3>
+                        <div class="grid grid-cols-1 gap-4 text-sm">
+                            <div><strong>Matcha-Latte Seda:</strong> Matcha ceremonial y vainilla.</div>
+                            <div><strong>Capuchino Ancestral:</strong> Con panela orgánica y canela.</div>
+                            <div><strong>Dalgona Nube de Café:</strong> Crema batida a mano.</div>
+                            <div><strong>Cocoa Fogón & Especias:</strong> Chocolate oscuro con clavo.</div>
+                            <div><strong>Chai-Latte Fuego Frío:</strong> Intenso y espumoso.</div>
+                            <div><strong>Mocca Frutos Rojos:</strong> Con dulce de mora artesanal.</div>
+                            <div><strong>Latte de Anís y Vainilla:</strong> Café suave de altura.</div>
+                            <div><strong>Pink Latte:</strong> Jamaica y leche (sin cafeína).</div>
+                            <div><strong>Bombón de Agraz:</strong> Leche condensada de agraz.</div>
+                            <div><strong>Aromática Jardín:</strong> Frutas frescas y panela.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postres -->
+            <div class="mt-12 bg-amber-50 p-8 rounded-3xl text-center">
+                <h3 class="text-2xl font-serif mb-8 italic">🍰 El Cierre: Postres de Autor</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <p><strong>Nubes de Tres Leches:</strong> Coulis de agraz y canela.</p>
+                    <p><strong>Mantecada Real:</strong> Crema de cítricos y arándanos.</p>
+                    <p><strong>Pan de la Abuela:</strong> Masa madre, panela y mora.</p>
+                    <p><strong>Tiramisú de la Sabana:</strong> Café de origen y cacao.</p>
+                    <p><strong>Crepe Banano Caramelo:</strong> Flambeado con helado.</p>
+                    <p><strong>Crepe Rojo Nutella:</strong> Frutos del bosque y queso crema.</p>
+                    <p><strong>Crepe Delirio:</strong> Crema de la casa y frutos ácidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Reserva -->
+    <footer id="reserva" class="bg-stone-900 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 border-b border-stone-800 pb-12">
+                <div>
+                    <h2 class="text-3xl font-serif mb-6">Información de Reserva</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><i class="far fa-calendar-alt mt-1 mr-3 text-amber-400"></i> <span><strong>Anticipación:</strong> Mínimo 3 días.</span></li>
+                        <li class="flex items-start"><i class="fas fa-hand-holding-usd mt-1 mr-3 text-amber-400"></i> <span><strong>Garantía:</strong> Abono del 50% para asegurar fecha e insumos.</span></li>
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-amber-400"></i> <span><strong>Ubicación:</strong> Barrio Puente Largo (Bogotá).</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-serif mb-6">Contacto</h2>
+                    <div class="space-y-6">
+                        <a href="https://wa.me/573114951646" class="flex items-center text-2xl hover:text-amber-400 transition">
+                            <i class="fab fa-whatsapp mr-4"></i> 311 4951646
+                        </a>
+                        <a href="#" class="flex items-center text-2xl hover:text-amber-400 transition">
+                            <i class="fab fa-instagram mr-4"></i> @beersheva113
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-stone-500 text-sm">
+                <p>&copy; 2024 Be'er Sheva Experiencias de Autor. Edificado sobre la Roca.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Función para alternar el menú
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Cerrar el menú al hacer clic en un enlace
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Cerrar menú si se redimensiona la pantalla a desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
